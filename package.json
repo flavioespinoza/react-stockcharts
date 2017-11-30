@@ -6,7 +6,6 @@
   "directories": {
     "lib": "lib"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "d3-array": "^1.2.1",
     "d3-collection": "^1.0.4",
