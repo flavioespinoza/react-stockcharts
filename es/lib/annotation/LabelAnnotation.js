@@ -66,8 +66,7 @@ var LabelAnnotation = function (_Component) {
 
 			return React.createElement(
 				"g",
-				{ className: className,
-          id: 'balls'
+				{ className: className + ' ' + 'balls',
         },
 				React.createElement(
 					"title",
@@ -140,7 +139,6 @@ LabelAnnotation.propTypes = {
 };
 
 export var defaultProps = {
-  id: 'hello_kitty',
 	textAnchor: "middle",
 	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
 	fontSize: 12,
@@ -156,7 +154,7 @@ export var defaultProps = {
 };
 
 LabelAnnotation.defaultProps = _extends({}, defaultProps, {
-	className: "react-stockcharts-labelannotation"
+	className: "react-stockcharts-labelannotation hello_kitty"
 });
 
 export default LabelAnnotation;
