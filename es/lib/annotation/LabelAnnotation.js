@@ -117,6 +117,7 @@ export function helper(props, xAccessor, xScale, yScale) {
 }
 
 LabelAnnotation.propTypes = {
+  id: PropTypes.string,
 	className: PropTypes.string,
 	text: PropTypes.string,
 	textAnchor: PropTypes.string,
