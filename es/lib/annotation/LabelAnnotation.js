@@ -139,6 +139,7 @@ LabelAnnotation.propTypes = {
 };
 
 export var defaultProps = {
+  id: 'hello_kitty',
 	textAnchor: "middle",
 	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
 	fontSize: 12,
