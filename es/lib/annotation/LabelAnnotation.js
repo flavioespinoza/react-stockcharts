@@ -82,7 +82,7 @@ var LabelAnnotation = function (_Component) {
 						transform: "rotate(" + rotate + ", " + xPos + ", " + yPos + ")",
 						onClick: this.handleClick,
 						textAnchor: textAnchor,
-            id: id
+            id: '__id'
           },
 					text
 				)
