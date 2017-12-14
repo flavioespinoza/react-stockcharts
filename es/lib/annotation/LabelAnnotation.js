@@ -66,7 +66,9 @@ var LabelAnnotation = function (_Component) {
 
 			return React.createElement(
 				"g",
-				{ className: className, id: id },
+				{ className: className,
+          id: 'balls'
+        },
 				React.createElement(
 					"title",
 					null,
@@ -82,7 +84,6 @@ var LabelAnnotation = function (_Component) {
 						transform: "rotate(" + rotate + ", " + xPos + ", " + yPos + ")",
 						onClick: this.handleClick,
 						textAnchor: textAnchor,
-            id: '__id'
           },
 					text
 				)
