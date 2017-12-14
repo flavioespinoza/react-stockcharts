@@ -45,6 +45,7 @@ var LabelAnnotation = function (_Component) {
 		key: "render",
 		value: function render() {
 			var _props2 = this.props,
+			    id = _props2.id,
 			    className = _props2.className,
 			    textAnchor = _props2.textAnchor,
 			    fontFamily = _props2.fontFamily,
@@ -65,7 +66,7 @@ var LabelAnnotation = function (_Component) {
 
 			return React.createElement(
 				"g",
-				{ className: className },
+				{ className: className, id: id },
 				React.createElement(
 					"title",
 					null,
@@ -73,13 +74,16 @@ var LabelAnnotation = function (_Component) {
 				),
 				React.createElement(
 					"text",
-					{ x: xPos, y: yPos,
+					{ x: xPos,
+            y: yPos,
 						fontFamily: fontFamily, fontSize: fontSize,
 						fill: fill,
 						opacity: opacity,
 						transform: "rotate(" + rotate + ", " + xPos + ", " + yPos + ")",
 						onClick: this.handleClick,
-						textAnchor: textAnchor },
+						textAnchor: textAnchor,
+            id: id
+          },
 					text
 				)
 			);
